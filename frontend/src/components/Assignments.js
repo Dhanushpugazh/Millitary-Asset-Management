@@ -7,7 +7,7 @@ function Assignments() {
   const [editingId, setEditingId] = useState(null);
 
   const fetchAssignments = async () => {
-    const res = await axios.get('http://localhost:5000/api/assignments');
+    const res = await axios.get('https://military-asset-management-fy15.onrender.com/api/assignments');
     setAssignments(res.data);
   };
 
