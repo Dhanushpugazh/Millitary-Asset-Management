@@ -8,7 +8,7 @@ const Users = () => {
 
   useEffect(() => {
     // ✅ Your axios call goes here
-    axios.get('http://localhost:5000/users')
+    axios.get('https://military-asset-management-fy15.onrender.com/users')
       .then((response) => {
         setUsers(response.data);
       })
