@@ -7,7 +7,7 @@ function AssetMovements() {
   const [editingId, setEditingId] = useState(null);
 
   const fetchMovements = async () => {
-    const res = await axios.get('http://localhost:5000/api/assetmovements')
+    const res = await axios.get('https://military-asset-management-fy15.onrender.com/api/assetmovements')
     setMovements(res.data);
   };
 
