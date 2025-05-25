@@ -8,7 +8,7 @@ const AuditLogs = () => {
   useEffect(() => {
     const fetchLogs = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/auditlogs');
+        const response = await axios.get('https://military-asset-management-fy15.onrender.com/api/auditlogs');
         setLogs(response.data);
       } catch (error) {
         console.error('Failed to fetch audit logs:', error);
