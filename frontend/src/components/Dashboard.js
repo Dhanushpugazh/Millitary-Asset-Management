@@ -6,7 +6,7 @@ function Dashboard() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/dashboard', {
+    axios.get('https://military-asset-management-fy15.onrender.com/api/dashboard', {
       params: { startDate: '2025-01-01', endDate: '2025-12-31' }
     })
     .then(res => setData(res.data))
