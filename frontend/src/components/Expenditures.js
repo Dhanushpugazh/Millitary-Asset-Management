@@ -7,7 +7,7 @@ function Expenditures() {
   const [editingId, setEditingId] = useState(null);
 
   const fetchExpenditures = async () => {
-    const res = await axios.get('http://localhost:5000/expenditures')
+    const res = await axios.get('https://military-asset-management-fy15.onrender.com/expenditures')
     setExpenditures(res.data);
   };
 
