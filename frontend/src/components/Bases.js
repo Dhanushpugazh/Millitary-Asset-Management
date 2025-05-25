@@ -83,7 +83,7 @@ function Bases() {
 
   const fetchBases = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/bases');
+      const res = await axios.get('https://military-asset-management-fy15.onrender.com/api/bases');
       setBases(res.data);
     } catch (err) {
       console.error('Failed to fetch bases:', err);
